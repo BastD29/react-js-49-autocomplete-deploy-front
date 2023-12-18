@@ -2,7 +2,10 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 export const bookApi = createApi({
   reducerPath: "bookApi",
-  baseQuery: fetchBaseQuery({ baseUrl: "/api" }),
+  // baseQuery: fetchBaseQuery({ baseUrl: "/api" }),
+  baseQuery: fetchBaseQuery({
+    baseUrl: "https://autocomplete-books-api.onrender.com/api",
+  }),
   endpoints: (builder) => ({
     // getBooks: builder.query({
     //   query: () => "books",

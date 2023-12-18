@@ -8,7 +8,7 @@ export default defineConfig({
     proxy: {
       "/api": {
         // target: "http://localhost:8000",
-        target: "https://books.onrender.com",
+        target: "https://autocomplete-books-api.onrender.com",
         changeOrigin: true,
       },
     },
